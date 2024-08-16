@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calories Information Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Calorie Information</h1>
+        <form id="calorieForm">
+            <label for="prompt">Enter your query:</label><br>
+            <textarea id="prompt" name="prompt" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Generate">
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
